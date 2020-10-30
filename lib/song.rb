@@ -37,6 +37,18 @@ class Song
   end
 
   def self.genre_count
+    genre_hash = {}
+    #go through every item in @@genres array
+    @@genres.each do |genre|
+    #if the genre key already exists value += 1
+      if genre_hash.include?(genre)
+        genre += 1
+      else
+    #if it is the first song of that genre, create a genre key, then add value 1
+        genre_hash[genre] = 1
+      end
+    end
+
 
   end
 
