@@ -23,6 +23,7 @@ class Song
       if unique_artists.include?(artist) != true
           unique_artists << artist
       end
+      unique_artists
     end
   end
   def self.genres
