@@ -45,7 +45,7 @@ class Song
     #if the genre key already exists value += 1
       if genre_hash.include?(genre)
         binding.pry
-        genre_hash[genre] += 1
+        genre = genre_hash[genre] + 1
       else
     #if it is the first song of that genre, create a genre key, then add value 1
         genre_hash[genre] = 1
